@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poyi(Sam)liu — Portfolio</title>
+<meta name="description" content="Personal portfolio and experience log.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <div class="wrap nav-row">
+      <a href="#top" class="brand">Samliu<span class="brand-dot">.</span></a>
+      <nav class="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- EDIT: link this to your actual resume PDF once you add one to the repo -->
+      <a href="resume.pdf" class="btn btn-ghost" download>Résumé</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero wrap">
+      <p class="mono eyebrow">// portfolio · log v1.0</p>
+      <h1>
+        Samliu —
+        <!-- EDIT: your role/title -->
+        <span class="accent">Data &amp; Analytics</span>
+      </h1>
+      <p class="hero-sub">
+        <!-- EDIT: one or two sentences on what you do and what you're looking for -->
+        I build statistical models and data pipelines that turn messy data into decisions.
+        Currently exploring opportunities in analytics and data science roles.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="wrap section" id="about">
+      <h2 class="section-title"><span class="mono tag">01</span>About</h2>
+      <p class="about-text">
+        <!-- EDIT: 3-5 sentences. Who you are, your background, what you're good at,
+             and what kind of role/company you're looking for. Recruiters skim this —
+             keep it concrete and specific rather than generic. -->
+        I'm a data-minded builder with hands-on experience across regression, classification,
+        time series, and survival analysis — mostly in R, with tools like tidymodels, xgboost,
+        and Prophet. I like taking a problem from raw data to a model someone can actually act on.
+        I'm looking for a role where I can do that on a team that ships.
+      </p>
+    </section>
+
+    <!-- ============ EXPERIENCE (log style) ============ -->
+    <section class="wrap section" id="experience">
+      <h2 class="section-title"><span class="mono tag">02</span>Experience</h2>
+
+      <div class="log-entry">
+        <div class="log-meta">
+          <span class="mono log-date"><!-- EDIT: dates -->2024 — Present</span>
+        </div>
+        <div class="log-body">
+          <h3><!-- EDIT: role --> Role Title <span class="log-at">@ <!-- EDIT: company -->Company Name</span></h3>
+          <ul>
+            <!-- EDIT: 2-4 bullets, lead with the outcome/impact, not just the task -->
+            <li>Built a [model type] that improved [metric] by [X%], replacing a manual process.</li>
+            <li>Owned the pipeline from raw data ingestion through to a dashboard used by [team/stakeholder].</li>
+            <li>Collaborated with [team] to define what "good" looked like for the model in production.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-meta">
+          <span class="mono log-date"><!-- EDIT: dates -->2022 — 2024</span>
+        </div>
+        <div class="log-body">
+          <h3><!-- EDIT: role -->Previous Role <span class="log-at">@ <!-- EDIT: company -->Previous Company</span></h3>
+          <ul>
+            <li>Edit this entry with your real experience — one entry per role.</li>
+            <li>Copy this whole <code>.log-entry</code> block to add more.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="wrap section" id="skills">
+      <h2 class="section-title"><span class="mono tag">03</span>Skills</h2>
+      <!-- EDIT: swap these for your real stack -->
+      <ul class="tag-list">
+        <li>R</li>
+        <li>Python</li>
+        <li>tidymodels</li>
+        <li>xgboost</li>
+        <li>Time Series (Prophet)</li>
+        <li>SQL</li>
+        <li>Survival Analysis</li>
+        <li>Data Visualization</li>
+      </ul>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="wrap section" id="projects">
+      <h2 class="section-title"><span class="mono tag">04</span>Projects</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h3><!-- EDIT: project name -->Project One</h3>
+          <p><!-- EDIT: 2-3 sentences: the problem, your approach, the result. -->
+            A short case study of a project you're proud of — what problem it solved,
+            what you built, and what happened as a result.</p>
+          <ul class="tag-list tag-list--small">
+            <li>R</li><li>xgboost</li>
+          </ul>
+          <a href="#" class="project-link">View code →</a>
+        </article>
+
+        <article class="project-card">
+          <h3><!-- EDIT: project name -->Project Two</h3>
+          <p>Copy this <code>.project-card</code> block for each project. Aim for 2-4 total —
+            quality over quantity, and link to real code or a write-up wherever you can.</p>
+          <ul class="tag-list tag-list--small">
+            <li>Python</li><li>Time Series</li>
+          </ul>
+          <a href="#" class="project-link">View code →</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Project Three</h3>
+          <p>A third example slot — delete it if you only have two strong projects.
+            Two great projects beat four thin ones.</p>
+          <ul class="tag-list tag-list--small">
+            <li>SQL</li><li>Survival Analysis</li>
+          </ul>
+          <a href="#" class="project-link">View code →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="wrap section" id="contact">
+      <h2 class="section-title"><span class="mono tag">05</span>Contact</h2>
+      <p class="contact-text">
+        <!-- EDIT: your real email/links -->
+        The best way to reach me is by email.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:you@example.com" class="btn btn-primary">you@example.com</a>
+        <a href="https://linkedin.com/in/yourhandle" class="btn btn-ghost">LinkedIn</a>
+        <a href="https://github.com/yourhandle" class="btn btn-ghost">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span class="mono">© <span id="year"></span> Samliu</span>
+      <span class="mono">built with html · css · no framework</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
